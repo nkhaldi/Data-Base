@@ -7,8 +7,8 @@
 	удобно использовать встроенную функцию datediff().
 */
 
-SELECT
+select
 	count(project_name),
 	sum(budget),
 	avg(datediff(project_finish, project_start))
-	FROM project;
+	from project;

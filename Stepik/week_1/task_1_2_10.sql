@@ -4,6 +4,6 @@
 	получателя установлен в неопределенное значение или пустую строку.
 */
 
-DELETE FROM billing
-	WHERE (payer_email ='' OR payer_email is null)
-	OR (recipient_email = '' OR recipient_email is null);
+delete from billing
+	where (payer_email ='' or payer_email is null)
+	or (recipient_email = '' or recipient_email is null);

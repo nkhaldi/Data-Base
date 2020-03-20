@@ -3,4 +3,4 @@
 	Выведите общее количество заказов компании.
 */
 
-SELECT count(1) FROM project;
+select count(1) from project;

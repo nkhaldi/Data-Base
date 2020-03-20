@@ -9,7 +9,7 @@
 	- комментарий: 'Valentines day present)'
 */
 
-INSERT INTO billing VALUES (
+insert into billing values (
 	'pasha@mail.com',
 	'katya@mail.com',
 	300.00,
