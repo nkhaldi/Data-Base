@@ -4,6 +4,8 @@
 	записей таблицы, где адрес плательщика 'alex@mail.com'.
 */
 
-update billing
-	set payer_email='igor@mail.com'
-	where payer_email='alex@mail.com';
+UPDATE billing 
+SET 
+    payer_email = 'igor@mail.com'
+WHERE
+    payer_email = 'alex@mail.com';

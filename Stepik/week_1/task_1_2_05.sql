@@ -4,5 +4,9 @@
 	В результат включите все столбцы таблицы и не меняйте порядка их вывода.
  */
 
-select * from billing
-	where payer_email='vasya@mail.com';
+SELECT 
+    *
+FROM
+    billing
+WHERE
+    payer_email = 'vasya@mail.com';

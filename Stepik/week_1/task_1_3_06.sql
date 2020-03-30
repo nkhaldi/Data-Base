@@ -7,7 +7,10 @@
 	- выручка от продажи товаров в данной категории.
 */
 
-select category, sum(sold_num * price) from store
-	group by category
-	order by sum(sold_num * price) desc
-	limit 5;
+SELECT 
+    category, SUM(sold_num * price)
+FROM
+    store
+GROUP BY category
+ORDER BY SUM(sold_num * price) DESC
+LIMIT 5;

@@ -6,8 +6,8 @@
 	- количество товаров в данной категории.
 */
 
-select
-	category,
-	count(product_name)
-	from store
-	group by category;
+SELECT 
+    category, COUNT(product_name)
+FROM
+    store
+GROUP BY category;
