@@ -7,7 +7,7 @@
 */
 
 SELECT 
-    g.name AS g_name, c.name AS c_name
+    g.name AS 'good_name', c.name AS 'category_name'
 FROM
     category AS c
         INNER JOIN

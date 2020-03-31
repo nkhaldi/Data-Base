@@ -2,7 +2,7 @@
 	База данных магазина store.
 	Выведите список клиентов (имя, фамилия) и количество заказов
 	данных клиентов, имеющих статус "new".
-	
+
 	Если необходимо в результате использовать группировку,
 	то в операторе GROUP BY должны быть указаны все атрибуты,
 	которые не являются аргументами аггрегирующих функций.
@@ -11,7 +11,9 @@
 */
 
 SELECT 
-    c.first_name, c.last_name, COUNT(1) AS sale_num
+    c.first_name AS 'first_name',
+    c.last_name AS 'last_name',
+    COUNT(1) AS 'new_sale_num'
 FROM
     client AS c
         INNER JOIN
